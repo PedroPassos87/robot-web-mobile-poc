@@ -1,0 +1,76 @@
+# ==========================================
+# .gitignore para Robot Framework (Web & Mobile)
+# ==========================================
+
+# ------------------------------------------
+# Robot Framework (Resultados e Logs)
+# ------------------------------------------
+# Pasta de resultados sugerida na arquitetura
+webtests/results/
+
+# Arquivos gerados caso o Robot rode na raiz
+log.html
+report.html
+output.xml
+
+# Capturas de tela (screenshots) de falhas de Web/Mobile
+*.png
+*.jpg
+*.jpeg
+
+# Logs dos WebDrivers (Navegadores)
+geckodriver-*.log
+geckodriver.log
+chromedriver.log
+
+# ------------------------------------------
+# Appium (Mobile)
+# ------------------------------------------
+# Logs gerados pelo servidor do Appium
+appium.log
+appium-*.log
+
+# ------------------------------------------
+# Python
+# ------------------------------------------
+# Arquivos de cache e bytes compilados
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambientes Virtuais
+venv/
+env/
+ENV/
+.venv/
+
+# Arquivos de ambiente local (variáveis de ambiente, senhas, capabilities sensíveis)
+.env
+.env.local
+
+# Pacotes e Distribuição
+build/
+dist/
+*.egg-info/
+
+# ------------------------------------------
+# Editores de Código / IDEs
+# ------------------------------------------
+# VS Code
+.vscode/
+
+# IntelliJ / PyCharm
+.idea/
+*.iml
+
+# ------------------------------------------
+# Sistema Operacional
+# ------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
