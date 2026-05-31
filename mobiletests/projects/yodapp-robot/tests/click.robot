@@ -36,6 +36,10 @@ Deve acessar o app e selecionar na sidebar a página "Clique em Botões"
 
     Click Element    ${SIDEBAR_CLIQUE_EM_BOTOES}
 
+    Wait Until Page Contains    Clique simples    5
+    Click Text    Clique simples
+    Wait Until Page Contains    Botão clique simples
+
     Close Application
 
 Deve acessar o app e selecionar na sidebar a página "Formulários"
@@ -61,6 +65,10 @@ Deve acessar o app e selecionar na sidebar a página "Formulários"
     Wait Until Element Is Visible    xpath=${SIDEBAR_FORMULARIO}    5
 
     Click Element    ${SIDEBAR_FORMULARIO}
+
+    Wait Until Page Contains    Login    5
+    Click Text    Login
+    Wait Until Page Contains    Olá Padawan, vamos testar o login?
 
     Close Application
     
