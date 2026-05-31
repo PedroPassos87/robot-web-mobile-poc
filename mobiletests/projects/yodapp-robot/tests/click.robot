@@ -12,7 +12,8 @@ ${SIDEBAR_FORMULARIO}    //*[@resource-id="com.qaxperience.yodapp:id/navView"]//
 *** Keywords ***
 
 *** Test Cases ***
-Deve acessar o app e selecionar na sidebar a página "Clique em Botões"
+Deve realizar um clique simples
+    [Tags]    TC01
     
     Open Application    http://localhost:4723    
     ...    platformName=Android    
@@ -39,6 +40,9 @@ Deve acessar o app e selecionar na sidebar a página "Clique em Botões"
     Wait Until Page Contains    Clique simples    5
     Click Text    Clique simples
     Wait Until Page Contains    Botão clique simples
+
+    Click Text    CLIQUE SIMPLES
+    Wait Until Page Contains    Isso é um clique simples
 
     Close Application
 
