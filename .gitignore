@@ -79,3 +79,5 @@ $RECYCLE.BIN/
 node_modules/
 *.apk
 appium-QA/
+
+api/
