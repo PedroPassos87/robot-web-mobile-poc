@@ -1,0 +1,5 @@
+pymongo==4.17.0
+python-dotenv==1.2.1
+robotframework==7.4.2
+robotframework-appiumlibrary==3.2.1
+
