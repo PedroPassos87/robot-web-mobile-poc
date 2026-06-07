@@ -2,8 +2,11 @@
 Documentation    Tudo deve começar nesse arquivo
 
 Library    AppiumLibrary
+Library    libs/mongo.py
 
 Resource    screens/login.resource
+Resource    screens/task.resource
+
 
 *** Variables ***
 ${IP_INPUT_XPATH}         xpath=//android.widget.EditText[@resource-id="apiIp"]
